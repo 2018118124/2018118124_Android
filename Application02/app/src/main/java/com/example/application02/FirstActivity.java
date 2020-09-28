@@ -16,17 +16,6 @@ import android.widget.Toast;
 public class FirstActivity extends AppCompatActivity {
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        switch (requestCode){
-            case 1:
-                if (resultCode == RESULT_OK){
-                    String returnedData = data.getStringExtra("data_return");
-                    Log.d("FirstActivity", returnedData);
-                }
-                break;
-            default:
-        }
-    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d("FirstActivity", this.toString());
